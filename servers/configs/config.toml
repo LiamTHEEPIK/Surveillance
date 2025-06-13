@@ -1,0 +1,12 @@
+db-connection-uri = "mongodb://localhost:27017/"
+db-connection-max = 10
+
+video-speed = 24
+video-width = 856
+video-height = 480
+
+cover-width = 214
+cover-height = 120
+
+remove-interval = 10
+frames-interval = 0.04166666

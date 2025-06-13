@@ -1,0 +1,27 @@
+precision = "fp32"
+providers = ["OpenVINOExecutionProvider", "CPUExecutionProvider"]
+
+detection-model-path = "inferences/models/detection-fp32.onnx"
+extraction-model-path = "inferences/models/extraction-fp32.onnx"
+
+segment-width = 456
+segment-height = 256
+segment-length = 16
+history-length = 8
+smoothing-window = 3
+
+crop-x1 = 28
+crop-x2 = 428
+crop-y1 = 16
+crop-y2 = 240
+
+normalization-std = 57.375
+normalization-mean = 114.75
+
+anomaly-threshold = 0.5
+anomaly-border = 20
+anomaly-prompt = "Anomaly behavior detected!"
+
+capture-interval = 0.02000000
+prepare-interval = 0.04166666
+predict-interval = 0.02000000

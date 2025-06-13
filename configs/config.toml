@@ -1,0 +1,17 @@
+device = "cpu"
+seed = 42
+learning-rate = 0.00006
+batch-size = 64
+group-size = 10
+num-epochs = 30
+num-workers = 0
+weight-decay = 0.0001
+
+alpha = 0.2
+attention-window = 9
+smoothing-window = 3
+
+load-checkpoint = false
+load-checkpoint-path = 'checkpoints/best-ckpt2.pt'
+best-checkpoint-path = 'checkpoints/best-ckpt4.pt'
+last-checkpoint-path = 'checkpoints/last-ckpt4.pt'
